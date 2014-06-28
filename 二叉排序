@@ -1,0 +1,10 @@
+def search(sequence, number, lower, upper):
+    middle = (lower + upper) // 2
+    if lower == upper:
+        assert number == sequence[upper]
+        return upper
+    elif number > sequence[middle]:
+        return search(sequence, number, middle+1, upper)
+    else:
+        return search(sequence, number, lower, middle)
+        

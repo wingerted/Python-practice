@@ -1,0 +1,10 @@
+def plus(a, b):
+    return a + b
+
+while True :
+    tmp = int(input())
+    if (tmp != 0):
+        print(plus(tmp, tmp))
+    else:
+        break
+    
