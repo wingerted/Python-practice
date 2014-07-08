@@ -45,6 +45,3 @@ def login(username, password):
          else:
              print 'OK'
              return opener
-
-
-login('wingerted', 'evil.325118')
